@@ -180,10 +180,12 @@ html, body {
   height: 100%;
   align-items: flex-end;
   padding-bottom: 150px;
+  justify-content: center;
+  gap: 160px;
 }
 
 #floor-1 .player-slot {
-  left: 280px;
+  left: 0;
   right: auto;
   display: flex;
   flex-direction: column;
@@ -191,7 +193,7 @@ html, body {
 }
 
 #floor-1 .enemy-slot {
-  right: 280px;
+  right: 0;
   left: auto;
   flex-direction: column;
   gap: 20px;

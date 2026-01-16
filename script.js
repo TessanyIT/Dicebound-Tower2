@@ -713,7 +713,7 @@ function playerAttack() {
   
   const targetEnemy = getPlayerTarget();
   const targetIndex = allEnemiesInBattle.findIndex(e => e === targetEnemy);
-  const slideDistances = currentFloorNumber === 1 ? [360, 540, 720] : [600, 900, 1200];
+  const slideDistances = currentFloorNumber === 1 ? [410, 590, 770] : [600, 900, 1200];
   const slideDistance = slideDistances[targetIndex] || 600;
   
   playerContainer.classList.add("player-slide-right");
@@ -816,7 +816,7 @@ function startEnemyTurn() {
 
     stopEnemyIdleAnimationByIndex(currentEnemyTurnIndex);
 
-    const enemySlideDistances = currentFloorNumber === 1 ? [360, 540, 720] : [600, 900, 1200];
+    const enemySlideDistances = currentFloorNumber === 1 ? [410, 590, 770] : [600, 900, 1200];
     const slideDistance = -(enemySlideDistances[currentEnemyTurnIndex]);
     
     if (enemyContainer) {
